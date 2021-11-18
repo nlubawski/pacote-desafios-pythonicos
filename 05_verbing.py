@@ -12,15 +12,26 @@ Retorne o resultado da string.
 
 def verbing(s):
 
+    if len(s)>3 and s[-3:] == 'ing':
+        s += 'ly'
+    elif len(s)>3:
+        s += 'ing'
+    else:
+        pass
+
+    return s
+
+
+    """ #primeira versao
     if len(s) < 3:
         return s
     else:
-        if s[-3:] == 'ing':
-            s = s + 'ly'
+        if :
+            s = s + 
         else:
             s = s + 'ing'
         return  s
-
+     """
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
